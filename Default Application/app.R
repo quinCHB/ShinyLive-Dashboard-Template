@@ -247,7 +247,7 @@ server <- function(input, output, session) {
       #Combine var1 with id
       labeledOptions <-  paste0(orderedVar1, " (extra label because the label is included in orginal par (", orderedallIds, ") )")
       
-      # Update the choices and selected values of the country input
+      # Update the choices to represent a list of two combined parameters
       updateSelectInput(
         session, "parGlobal_casscadeFromInputOneNonRestrictive",
         choices = labeledOptions,
